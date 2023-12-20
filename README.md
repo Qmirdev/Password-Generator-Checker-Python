@@ -42,7 +42,7 @@ Run `python3 PassGEN.py`
 
 - Python 3.x
 - secrets, string, getpass, logging, datetime modules
--
+
 Overall, this script generates strong random passwords and analyzes the strength of user passwords to enforce good password security practices. The logging provides an audit trail of passwords.
 
 > [!NOTE]
