@@ -1,6 +1,5 @@
 # Password Generator & Strength Checker
-
-A Python script to generate random passwords and analyze their strength.
+<img src="https://github.com/Qmirdev/Password-Generator-Checker-Python/blob/main/doc/1.png">
 
 #### This Python script has two main features for generating and analyzing passwords:
 
