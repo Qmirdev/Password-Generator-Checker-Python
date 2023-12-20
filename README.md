@@ -1,42 +1,54 @@
 # Password Generator & Strength Checker
+
 A Python script to generate random passwords and analyze their strength.
 
-#### This script has two main features:
+#### This Python script has two main features for generating and analyzing passwords:
 
 ## Password Generator
-Generates a random password of your desired length
-Uses letters, numbers and symbols to create secure passwords
-Password length is configurable via user input
+
+- Generates random passwords of user-specified length
+- Uses a combination of letters, numbers and symbols to create secure passwords
+- Password length is configurable based on user input
+- Uses the secrets module to generate cryptographically secure random characters
+- Ensures at least 2 numbers and 1 special symbol in each password before considering it strong
+- Logs each generated password with timestamp to passwords.log file
 
 ## Password Strength Checker
-Checks the strength of a user input password Analyzes password for:
-- Lowercase, uppercase, numbers, symbols
-- Password length
-- Calculates a password strength score out of 1.0
-- Provides feedback on how to improve password security
-Passwords generated and checked are logged with a timestamp for records.
 
-### Usage
-To use the password generator simply run
+Password Strength Checker
+- Analyzes strength of a user-input password
+- Checks password for:
+    - Lowercase letters
+    - Uppercase letters
+    - Numbers
+    - Symbols
+    - Whitespace characters
+- Calculates overall password strength score out of 1.0
+- Provides feedback to user on how to improve password security
+- Considers password with all character types as very strong
+- Provides remarks based on strength score to change or keep password
+- Logs feedback provided to user for each password checked
 
-`python3 PassGEN.py`
+## Usage
 
-You will be prompted to enter the desired password length. A random password containing letters, numbers and symbols will be generated.
+Run `python3 PassGEN.py`
 
-To check the strength of a password:
+1. Enter desired password length when prompted
+2. Generated password will be printed
+3. Optionally check strength of the generated password
+4. Or check strength of a different password entered when prompted
 
-Enter a password when prompted after running the script. The password will be analyzed and you will receive feedback on its strength and how to improve it.
+## Requirements
 
-### Requirements
+- Python 3.x
+- secrets, string, getpass, logging, datetime modules
+-
+Overall, this script generates strong random passwords and analyzes the strength of user passwords to enforce good password security practices. The logging provides an audit trail of passwords.
+
 > [!NOTE]
 > Simply Install all needed dependencies with executing `pip install -r requirements.txt` in the project directory.
 
-This script requires Python 3 and the following modules:
-secrets
-string
-logging
-datetime
-License
+## License
 This project is open source and available under the MIT License.
 
 <3
